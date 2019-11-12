@@ -7,13 +7,20 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    [Header("Wave settings")]
-    public GameObject hazard;
+    [Header("Asteroid Wave settings")]
+    public GameObject asteroid;
     public Vector2 spawnValue;
-    public int hazardCount;
+    public int asteroidCount;
     public float startWait;
     public float spawnWait;
     public float waveWait;
+
+    [Header("Enemy Ship Wave Settings")]
+    public GameObject enemyShip;
+    public Vector2 shipSpawnVal;
+    public int shipCount;
+    public float shipSpawnWait;
+    public float shipWaveWait;
 
     [Header("Text Options")]
     public Text scoreText;
@@ -65,15 +72,27 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(startWait);
         while (true)
         {
-            for (int i = 0; i < hazardCount; i++)
+            for (int i = 0; i < asteroidCount; i++)
             {
                 Vector2 spawnPosition = new Vector2(spawnValue.x, Random.Range(-spawnValue.y, spawnValue.x));
 
                 Quaternion spawnRotation = Quaternion.identity;
-                Instantiate(hazard, spawnPosition, spawnRotation);
+                Instantiate(asteroid, spawnPosition, spawnRotation);
                 yield return new WaitForSeconds(spawnWait); // wait time between spawning each asteroid
             }
             yield return new WaitForSeconds(waveWait); // delete between each wave
+
+
+            for (int i = 0; i < shipCount; i++)
+            {
+                Vector2 spawnPosition = new Vector2(shipSpawnVal.x, Random.Range(-shipSpawnVal.y, shipSpawnVal.x));
+
+                Quaternion spawnRotation = Quaternion.identity;
+                Instantiate(enemyShip, spawnPosition, spawnRotation);
+                yield return new WaitForSeconds(shipSpawnWait); // wait time between spawning each asteroid
+            }
+            yield return new WaitForSeconds(shipWaveWait); // delete between each wave
+
             //Allows the player to restart the game
             if (gameOver)
             {
