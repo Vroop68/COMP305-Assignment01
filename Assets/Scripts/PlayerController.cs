@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// PlayerController.cs - John Knoop - 300835103 - October 26 2019 - This script controls player movement and shooting
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +10,8 @@ public class Boundary
     public float minX, maxX, minY, maxY;
 }
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
     // Public variables
     public float speed = 5.0f;
@@ -21,16 +24,15 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D rBody;
     private float myTime = 0.0f;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         rBody = GetComponent<Rigidbody2D>();
-	}
+    }
 
-    //Call once per frame but inconsistent
     void Update()
     {
-        myTime += Time.deltaTime; //DeltaTime represent the amount of time elapsed since the last Update() call
-        //myTime= myTime + Time.deltaTime
+        myTime += Time.deltaTime;
 
         if (Input.GetButton("Fire1") && myTime > fireRate)
         {
@@ -39,8 +41,7 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    // Called once per frame and is guaranteed to be consistent
-    // Used for Physics calculations
+
     void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");

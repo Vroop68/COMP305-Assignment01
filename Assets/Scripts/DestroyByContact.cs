@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿// DestroyByContact.cs - John Knoop - 300835103 - October 25 2019 - This script causes objects to be destroyed when they come in contact with other objects
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

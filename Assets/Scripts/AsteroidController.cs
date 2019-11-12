@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// AsteroidController.cs - John Knoop - 300835103 - October 21 2019 - This script controls asteroids movement
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

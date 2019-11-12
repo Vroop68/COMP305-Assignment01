@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿// GameController.cs - John Knoop - 300835103 - November 12 2019 - This script controls spawning of asteroids, and ships as well as the score and the ability to restart
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 // new using statements

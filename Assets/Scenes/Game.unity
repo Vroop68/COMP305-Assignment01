@@ -548,7 +548,7 @@ MonoBehaviour:
     type: 3}
   playerExplosion: {fileID: 1785703816593760, guid: aafba6003359c1d47aea2d9752a949f7,
     type: 3}
-  scoreValue: 10
+  scoreValue: 0
 --- !u!1 &782810935
 GameObject:
   m_ObjectHideFlags: 0

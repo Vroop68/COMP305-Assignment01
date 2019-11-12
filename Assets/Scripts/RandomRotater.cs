@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// RandomRotater.cs - John Knoop - 300835103 - October 27 2019 - This script gives asteroids the ability to be rotated at random degrees
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

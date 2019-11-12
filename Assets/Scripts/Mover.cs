@@ -1,19 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿// // AsteroidController.cs - John Knoop - 300835103 - October 24 2019 - This script controls move
 
-public class Mover : MonoBehaviour
-{
-    //This script is used to cause the asteroids to move
-    // Public Variables
-    public float speed;
+// using System.Collections;
+// using System.Collections.Generic;
+// using UnityEngine;
 
-    // Private variables
-    private Rigidbody2D rBody;
+// public class Mover : MonoBehaviour
+// {
+//     // Public Variables
+//     public float speed;
 
-    void Start()
-    {
-        rBody = GetComponent<Rigidbody2D>();
-        rBody.velocity = transform.right * speed;
-    }
-}
+//     // Private variables
+//     private Rigidbody2D rBody;
+
+//     void Start()
+//     {
+//         rBody = GetComponent<Rigidbody2D>();
+//         rBody.velocity = transform.right * speed;
+//     }
+// }

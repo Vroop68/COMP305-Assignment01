@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿// LaserController.cs - John Knoop - 300835103 - October 24 2019 - This script is used to control movement and speed of lasers
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

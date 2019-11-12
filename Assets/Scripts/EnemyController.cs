@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿// EnemyController.cs - John Knoop - 300835103 - October 24 2019 - This script controls enemy ships firing pattern
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,9 +24,7 @@ public class EnemyController : MonoBehaviour
         rBody = GetComponent<Rigidbody2D>();
         rBody.velocity = transform.right * speed;
     }
-    /// <summary>
-    /// Update is called every frame, if the MonoBehaviour is enabled.
-    /// </summary>
+
     void Update()
     {
         myTime += Time.deltaTime;
@@ -35,9 +36,6 @@ public class EnemyController : MonoBehaviour
     }
 
 
-    void EnemyShooting()
-    {
-        //test
-    }
+
 }
 

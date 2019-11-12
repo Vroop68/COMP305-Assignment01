@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// BoundaryDestroyer.cs - John Knoop - 300835103 - October 21 2019 - This script is used to destory anything which passes the boundary
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

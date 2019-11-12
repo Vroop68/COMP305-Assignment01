@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// SpaceController.cs - John Knoop - 300835103 - October 24 2019 - This script controls the movement of the background
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
