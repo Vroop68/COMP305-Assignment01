@@ -581,16 +581,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroid: {fileID: 1602721420174188, guid: f28998d374853ca4f9d2d13ca9069ca3, type: 3}
   spawnValue: {x: 11, y: 3}
-  asteroidCount: 3
+  asteroidCount: 6
   startWait: 1
-  spawnWait: 0.5
-  waveWait: 3
+  spawnWait: 0.2
+  waveWait: 1
   enemyShip: {fileID: 6751459401960590921, guid: fe05bc1d95224fa48a85ba16fa443a68,
     type: 3}
   shipSpawnVal: {x: 10, y: 2}
-  shipCount: 3
+  shipCount: 5
   shipSpawnWait: 0.5
-  shipWaveWait: 3
+  shipWaveWait: 2
   scoreText: {fileID: 1952017041}
   restartText: {fileID: 860233226}
   gameOverText: {fileID: 1382127951}
